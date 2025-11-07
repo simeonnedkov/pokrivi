@@ -113,8 +113,8 @@ ul {
 }
 
 .logo-image {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   object-fit: contain;
   border-radius: 0.5rem;
 }
@@ -844,8 +844,8 @@ ul {
   }
 
   .logo-image {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
   }
 
   .logo {
@@ -968,13 +968,15 @@ ul {
     padding: var(--spacing-sm) var(--spacing-md);
   }
 
+  /* increased logo size on mobile from 35px to 55px for better visibility */
   .logo-image {
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
   }
 
+  /* increased logo text size on mobile from 1.1rem to 1.3rem */
   .logo {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
 
   .hero {
