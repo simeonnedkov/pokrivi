@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Свържете се с САВИЕМПИ ООД за безплатна оферта. Професионални услуги за ремонт и монтаж на покриви.">
+    <meta name="keywords" content="контакт ремонт покриви, оферта покриви, монтаж покриви, инспекция покриви">
+    <title>Свържете се с нас - САВИЕМПИ ООД</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sticky Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="Images/logo.png" alt="САВИЕМПИ ООД лого" class="logo-image">
+                <span class="logo-text">САВИЕМПИ ООД</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Начало</a></li>
+                <li><a href="contact.html" class="nav-link active">Контакти</a></li>
+            </ul>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Превключване на навигацията">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1 class="page-title fade-in">Свържете се с нас</h1>
+            <p class="page-subtitle fade-in-delay">Тук сме, за да помогнем с всички Ваши нужди за ремонт и монтаж на покриви</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm" action="contact-form.php" method="POST" novalidate>
+                        <h2>Изпратете ни съобщение</h2>
+                        
+                        <div class="form-group">
+                            <label for="name">Пълно име *</label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                placeholder="Иван Иванов" 
+                                required
+                                aria-required="true"
+                            >
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Имейл адрес *</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                placeholder="ivan.ivanov@example.com" 
+                                required
+                                aria-required="true"
+                            >
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Телефонен номер *</label>
+                            <input 
+                                type="tel" 
+                                id="phone" 
+                                name="phone" 
+                                placeholder="0888 123 456" 
+                                required
+                                aria-required="true"
+                            >
+                            <span class="error-message" id="phoneError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Съобщение *</label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                rows="5" 
+                                placeholder="Разкажете ни за Вашите покривни нужди..." 
+                                required
+                                aria-required="true"
+                            ></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span class="btn-text">Изпрати съобщение</span>
+                            <span class="btn-loader" style="display: none;">⏳ Изпращане...</span>
+                        </button>
+
+                        <div class="form-success" id="formSuccess" style="display: none;"></div>
+                        <div class="form-error" id="formError" style="display: none;"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>САВИЕМПИ ООД</h4>
+                    <p>Вашият доверен партньор за всички покривни нужди. Качествена изработка, надеждна услуга.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Бързи връзки</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Начало</a></li>
+                        <li><a href="contact.html">Контакти</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Информация за контакт</h4>
+                    <p>📞 <a href="tel:+359897765263">+359 89 776 5263</a></p>
+                    <p>📧 info@eliteroofing.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 САВИЕМПИ ООД. Всички права запазени.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
